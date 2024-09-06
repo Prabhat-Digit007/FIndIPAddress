@@ -1,6 +1,6 @@
 package com.example.GetIPAdress.controller;
 
-import com.example.GetIPAdress.model.SystemInfo;
+import com.example.GetIPAdress.model.SystemInfoDTO;
 import com.example.GetIPAdress.service.SystemInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,7 @@ public class SystemInfoController {
     private SystemInfoService systemInfoService;
 
     @GetMapping("/system-info")
-    public SystemInfo getSystemInfo() {
+    public SystemInfoDTO getSystemInfo() {
         return systemInfoService.getSystemInfo();
     }
 }

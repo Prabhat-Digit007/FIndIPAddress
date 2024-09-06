@@ -1,9 +1,9 @@
 package com.example.GetIPAdress.model;
-public class SystemInfo {
+public class SystemInfoDTO {
     private String ip;
     private String mac;
 
-    public SystemInfo(String ip, String mac) {
+    public SystemInfoDTO(String ip, String mac) {
         this.ip = ip;
         this.mac = mac;
     }
